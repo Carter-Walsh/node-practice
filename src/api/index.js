@@ -10,7 +10,9 @@ api.use(express.urlencoded({ extended: false }));
 api.use(cors())
 
 /* When we receive a request for /health, it will
-call the health method that is imported */
+call the health route that is imported.
+Full url to hit health endpoint will be 
+http://localhost:3001/api/health */
 api.use('/health', health);
 
 module.exports = api;
